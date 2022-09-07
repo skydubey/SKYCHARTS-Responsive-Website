@@ -1,0 +1,69 @@
+
+
+#a2 {
+    color: rgba(26, 115, 232, 1);
+}
+
+#a1,
+#a3,
+#a4 {
+    color: black;
+
+}
+
+#a1,
+#a2,
+#a3,
+#a4 {
+    margin-right: 15px;
+    padding: 9px;
+    text-align: center;
+}
+
+#a1:hover,
+#a3:hover,
+#a4:hover {
+    
+    color: rgba(26, 115, 232, 1);
+
+}
+
+
+/* Blog Section */
+
+.blog{
+    margin: 0.5rem 2rem;
+    text-transform: capitalize;
+    /* font-style: italic; */
+}
+
+#blogtitle{
+    text-transform: capitalize;
+    color: rgb(250, 105, 37);
+    color: black;
+}
+
+.blogtime{
+    font-weight: bolder;
+}
+
+#opening{
+    color: grey;
+}
+
+.parablog::first-letter{
+    font-size: 3rem;
+    font-style: italic;
+    color: rgba(26, 115, 232, 1);
+    
+}
+
+
+
+fieldset{
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem ;
+    margin-top: 2rem;
+    font-size: 2vmax;
+}

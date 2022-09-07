@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: Haffer, sans-serif; */
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    
+}
+
+body{
+    background-color: white;
+    /* opacity: 1; */
+}
+
+
+/* -- ----------- Start Of Navigation Bar ----------- -- */
+
+
+
+/* For Background Color Of Navigation Bar */
+
+.bg-dark {
+
+    background-color: rgba(26, 115, 232, 1) !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-bottom: solid 1px #dbdbdb;
+    /* background-color: #1a73e8; */
+    /* rgb(26, 115, 232) */
+}
+
+
+/* For Logo Text */
+
+a.navbar-brand {
+    font-size: 3rem;
+    margin-right: 3rem;
+    color: rgb(255, 80, 0);
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-brand,.navbar-dark .navbar-brand:hover,.navbar-dark .navbar-brand :focus {
+    color: rgb(255, 80, 0);
+}
+
+
+/* .navbar-brand {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            aqua 0%,
+            #fff800 29%,
+            rgba(250, 48, 48, 0.918) 67%,
+            aquamarine 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+} */
+
+/* For All Buttons */
+
+#signup_btn,
+#login_btn {
+    /* border: 2px solid white; */
+    border: none;
+    background-color: rgba(26, 115, 232, 0.88);
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+#signup_btn:hover,
+#login_btn:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgba(26, 115, 232, 1);
+    /* transition: 0.45s ease-in-out; */
+    border: none;
+}
+
+/* For Dropdown Menu of Charts and More section */
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
+}
+
+
+/* For Chart Png */
+
+#chartpng {
+    height: 20px;
+    width: 18px;
+    /* filter: invert(100%); */
+}
+
+/* For Navigation Links */
+
+
+
+
+#a1,
+#a2,
+#a3,
+#a4{
+  font-size: 1.1rem;
+    
+}
+#ta1,
+#ta2,
+#ta3,
+#fa1,
+#fa2 {
+    color: black;
+    font-weight: 600;
+    
+}
+
+
+
+#ta1:hover,
+#ta2:hover,
+#ta3:hover,
+#fa1:hover,
+#fa2:hover {
+    color: rgba(26, 115, 232, 1);
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    background-color: transparent;
+    /* transition: 0.5s ease-in-out; */
+}
+
+
+/* For Button */
+.btn {
+    border-radius: 20px;
+}
+
+
+#a2:hover,
+#a3:hover,
+#a4:hover {
+    /* border: 2px solid aquamarine; */
+    /* border-radius: 20px; */
+    color: rgba(26, 115, 232, 1);
+    transition: 0.5s ease;
+
+}
+
+
+/* For Navbar Text On Right Side */
+
+#navbar_text {
+    color: rgb(255, 80, 0);
+    margin-right: 20px;
+}
+
+
+/* -- ----------- End Of Navigation Bar ----------- -- */

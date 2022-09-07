@@ -1,0 +1,140 @@
+
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 991px) {
+
+
+
+
+
+
+    /* ---------------------------------------- Home Page ---------------------------------------- */
+
+
+
+    /* -- ----------- Start Of Navigation Bar ----------- -- */
+
+
+    /* For Navbar Right Side Text */
+
+    #navbar_text {
+        display: block;
+        display: none;
+    }
+
+
+    .navbar-dark .navbar-brand{
+        margin-right: 10px;
+        font-size: 2rem;
+    }
+
+    /* For Register and Login Button Container */
+
+    .register_container {
+        margin-right: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* For All Buttons */
+
+    .btn {
+        
+        border-radius: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+   
+
+
+    /* For Navigation Links */
+
+    /* For Navbar Toggler */
+
+    /* .navbar-dark .navbar-toggler {
+        border:2px solid #ffffff;
+        color: white;
+        border-radius: 10px;
+        border: 1px solid;
+        filter: invert(100%);
+        color:grey ;
+       
+
+    } */
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image: none;
+    }
+
+    .bi.bi-list{
+        color: black;
+        height: 40px;
+        width: 40px;
+        padding-bottom: 7px;
+    }
+
+    .bi.bi-list:hover{
+        color: #0d6efd;
+    }
+
+    
+
+
+
+    /* For Dropdown Menu of Charts and More Section */
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    /* -- ----------- End Of Navigation Bar ----------- -- */
+
+   
+
+    /* For Cards Section */
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin: 20px 0px;
+        border-radius: 15px;
+        border: 2px solid #0d6efd;
+    }
+
+
+
+    /* For Footer Section */
+
+    .footer,.footimgdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footpara{
+        font-size: 1rem;
+    }
+
+    .socialicons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+    /* ---------------------------------------- End Of Home Page ---------------------------------------- */
+}

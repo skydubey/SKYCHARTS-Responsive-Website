@@ -1,0 +1,316 @@
+/* For Navigation Links */
+
+#a1 {
+    color: rgba(26, 115, 232, 1);
+}
+
+#a2,
+#a3,
+#a4 {
+    color: black;
+
+}
+
+#a1,
+#a2,
+#a3,
+#a4 {
+    margin-right: 15px;
+    padding: 9px;
+    text-align: center;
+}
+
+#a2:hover,
+#a3:hover,
+#a4:hover {
+    
+    color: rgba(26, 115, 232, 1);
+
+}
+
+
+
+
+/* Sign Up Modal */
+
+/* For Form Inputs */
+
+.col-md-12 {
+    margin-top: 7px;
+}
+
+#submit_btn,
+#close_btn,
+#reset_btn {
+    display: block;
+    margin: auto;
+
+}
+
+#submitsection {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+/* For Body Section */
+
+#heading1 {
+    text-align: center;
+    margin: 2.5rem 0rem;
+    color: rgba(26, 115, 232, 1);
+    font-size: 10vmin;
+}
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 500px) {
+
+    #heading1 {
+        text-align: center;
+        margin: 2.5rem 0.5rem;
+    }
+
+}
+
+
+/* For Image Slider  */
+
+
+.container {
+    /* height: 100vh; */
+    width: 70%;
+
+}
+
+#img {
+    border-radius: 15px;
+}
+
+/* For Slider Section */
+
+#slidercontainer {
+    width: 1500px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 330px) {
+    #slidercontainer {
+        width: 280px;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 360px) {
+    #slidercontainer {
+        width: 330px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 430px) {
+    #slidercontainer {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 530px) {
+    #slidercontainer {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 530px) and (max-width: 580px) {
+    #slidercontainer {
+        width: 500px;
+    }
+}
+
+
+@media only screen and (min-width: 580px) and (max-width: 767px) {
+    #slidercontainer {
+        width: 1200px;
+    }
+}
+
+/* For Cards Section */
+
+.container.cards {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    margin-top: 50px;
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+#card1,
+#card2,
+#card3 {
+    width: 450px;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 500px) {
+
+    #card1,
+    #card2,
+    #card3 {
+        /* width: 450px; */
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+}
+
+@media only screen and (min-width: 390px) and (max-width: 480px) {
+
+    #card1,
+    #card2,
+    #card3 {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 390px) {
+
+    #card1,
+    #card2,
+    #card3 {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 350px) {
+
+    #card1,
+    #card2,
+    #card3 {
+        width: 280px;
+    }
+}
+
+.card {
+    margin: 0px 20px;
+    /* flex-wrap: wrap; */
+    border-radius: 15px;
+}
+
+
+/* CARDS SECTION */
+
+#heading2 {
+    text-align: center;
+    margin: 6rem 1rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.card-img-top {
+    border-radius: 15px;
+}
+
+
+/* SERVICES SECTION */
+
+.card.text-center {
+    margin: 100px 10px;
+}
+
+.card.mb-3 {
+    margin: 100px;
+}
+
+
+.card {
+
+    border: 2px solid #0d6efd;
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicebanner {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    /* height: 24rem; */
+}
+
+
+
+/* For Footer Section */
+
+
+footer {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footimgdiv {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 20px;
+}
+
+#footimg {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50px;
+
+}
+
+.footpara {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.socialicons {
+    margin: 10px;
+}
+
+/* For Specific Icons */
+
+.bi.bi-instagram,
+.bi.bi-facebook,
+.bi.bi-twitter,
+.bi.bi-whatsapp {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 20px;
+}
+
+.bi.bi-instagram:hover,
+.bi.bi-facebook:hover,
+.bi.bi-twitter:hover,
+.bi.bi-whatsapp:hover {
+    height: 3rem;
+    width: 3rem;
+    transition: 0.5s;
+}
+
+.bi.bi-whatsapp {
+    color: green;
+}
+
+.bi.bi-instagram {
+    color: rgb(255, 45, 80);
+}
