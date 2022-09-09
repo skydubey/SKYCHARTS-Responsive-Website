@@ -217,6 +217,14 @@
 
 /* SERVICES SECTION */
 
+@media only screen and (min-width: 991px) {
+    #servicesecton{
+        margin-left: 4rem ;
+        margin-right: 4rem ;
+    }
+  
+}
+
 .card.text-center {
     margin: 100px 10px;
 }
