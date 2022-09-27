@@ -152,6 +152,7 @@
 #card2,
 #card3 {
     width: 450px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 80, 0, 0.2);
 }
 
 
