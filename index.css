@@ -232,6 +232,21 @@
   
 }
 
+
+/* For Services Footer */
+
+.text-muted {
+    color: rgb(0 135 255) !important;
+}
+.card-footer {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+
+/* ----------------------- */
+
 .card.text-center {
     margin: 100px 10px;
 }
