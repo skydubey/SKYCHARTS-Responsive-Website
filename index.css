@@ -199,6 +199,7 @@
     margin: 0px 20px;
     /* flex-wrap: wrap; */
     border-radius: 15px;
+    border: hidden;
 }
 
 
@@ -213,6 +214,11 @@
 
 .card-img-top {
     border-radius: 15px;
+}
+
+.card-header {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 
