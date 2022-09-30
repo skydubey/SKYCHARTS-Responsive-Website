@@ -154,11 +154,13 @@
     width: 450px;
     box-shadow: 0px 8px 16px 0px rgba(255, 80, 0, 0.4);
     filter: blur(2px);
+    cursor: pointer;
 }
 #card1:hover,
 #card2:hover,
 #card3:hover {
     filter: blur(0px);
+    transition: 0.5s;
 }
 
 
