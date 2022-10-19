@@ -1,0 +1,86 @@
+
+#ta2 {
+    color: rgba(26, 115, 232, 1);
+}
+
+#a1,#a2,
+#a3,
+#a4 {
+    color: black;
+
+}
+
+#a1,
+#a2,
+#a3,
+#a4 {
+    margin-right: 15px;
+    padding: 9px;
+    text-align: center;
+}
+
+#a1:hover,
+#a3:hover,
+#a4:hover {
+    
+    color: rgba(26, 115, 232, 1);
+
+}
+
+
+.threecards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stockscard{
+    margin: 10px;
+    border: 2px solid rgba(26, 115, 232, 0.88);
+}
+
+.card-body{
+    margin: 10px;
+}
+
+.stocksearch{
+    margin: 20px;
+}
+
+.stocksearchinput{
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.stocksearchinput,.stocksearchbtn{
+    margin: 5px;
+}
+
+.btn.btn-outline-success.stocksearchbtn{
+    border-radius: 25px;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 600px){
+
+    .stocksearch{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .stocksearchinput,.stocksearchbtn{
+        margin-bottom: 10px;
+        width: auto;
+
+    }
+    
+}
