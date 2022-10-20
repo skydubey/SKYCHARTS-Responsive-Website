@@ -28,17 +28,7 @@
 }
 
 
-.threecards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-.stockscard{
-    margin: 10px;
-    border: 2px solid rgba(26, 115, 232, 0.88);
-}
 
 .card-body{
     margin: 10px;
@@ -89,5 +79,14 @@
 /* For Scrip Data Card */
 
 #scripdata{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 50%;
+}
+
+.stockscard{
+    margin: 10px;
+    border: 2px solid rgba(26, 115, 232, 0.88);
 }
