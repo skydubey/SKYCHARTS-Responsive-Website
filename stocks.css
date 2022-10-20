@@ -1,9 +1,9 @@
-
 #ta2 {
     color: rgba(26, 115, 232, 1);
 }
 
-#a1,#a2,
+#a1,
+#a2,
 #a3,
 #a4 {
     color: black;
@@ -22,7 +22,7 @@
 #a1:hover,
 #a3:hover,
 #a4:hover {
-    
+
     color: rgba(26, 115, 232, 1);
 
 }
@@ -30,55 +30,58 @@
 
 
 
-.card-body{
+.card-body {
     margin: 10px;
 }
 
-.stocksearch{
+.stocksearch {
     margin: 20px;
 }
 
-.stocksearchinput{
+.stocksearchinput {
     padding: 15px;
     border-radius: 25px;
 }
 
-.stocksearchinput,.stocksearchbtn{
+.stocksearchinput,
+.stocksearchbtn {
     margin: 5px;
 }
 
-.btn.btn-outline-success.stocksearchbtn{
+.btn.btn-outline-success.stocksearchbtn {
     border-radius: 25px;
 }
 
-.card-title{
+.card-title {
     text-transform: uppercase;
     font-weight: bold;
 }
 
 
-@media only screen and (min-width: 280px) and (max-width: 600px){
+@media only screen and (min-width: 280px) and (max-width: 600px) {
 
-    .stocksearch{
+    .stocksearch {
         margin: 20px;
         display: flex;
         flex-direction: column;
-        
+
         justify-content: center;
         align-items: center;
     }
-    .stocksearchinput,.stocksearchbtn{
+
+    .stocksearchinput,
+    .stocksearchbtn {
         margin-bottom: 10px;
         width: auto;
 
     }
-    
+
 }
 
 
 /* For Scrip Data Card */
 
-#scripdata{
+#scripdata {
     width: 50%;
 }
 
@@ -89,11 +92,21 @@
     align-items: center;
 }
 
-.stockscard{
+.stockscard {
     margin: 10px;
     border: 2px solid rgba(26, 115, 232, 0.88);
 }
 
-.container{
+.container {
     width: 95%;
+}
+
+
+#datepicker {
+    width: 180px;
+    height: 60px;
+    padding: 8px;
+    line-height: 1.5;
+    margin-top: 3px;
+    border-radius: 25px;
 }
