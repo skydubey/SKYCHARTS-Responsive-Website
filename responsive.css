@@ -91,12 +91,8 @@
 
     /* For Scrip Data Card */
 
-    #scripdata{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+    #scripdata {
+        width: 150%;
     }
 
     /* -- ----------- End Of Navigation Bar ----------- -- */

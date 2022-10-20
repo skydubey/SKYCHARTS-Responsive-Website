@@ -79,11 +79,14 @@
 /* For Scrip Data Card */
 
 #scripdata{
+    width: 50%;
+}
+
+.threecards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50%;
 }
 
 .stockscard{
