@@ -10,16 +10,16 @@
 
   <title>Sky Charts</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="skyinvestments-logo.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="../Media/Logos & Favicons/skyinvestments-logo.jpg" type="image/x-icon">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Page CSS -->
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="master.css">
-  <link rel="stylesheet" href="stocks.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/master.css">
+  <link rel="stylesheet" href="../CSS/stocks.css">
   <!-- Master CSS -->
   <!-- Responsive CSS -->
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="../CSS/responsive.css">
   <!-- Other For Slider  -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -43,20 +43,20 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" id="a1" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" id="a1" aria-current="page" href="../HTML Code/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="a2" href="blog.html">Blog</a>
+            <a class="nav-link" id="a2" href="../HTML Code/blog.html">Blog</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="a3" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="chart.png" id="chartpng" alt="">
+              <img src="../Media/Other Images/chart.png" id="chartpng" alt="">
               Charts
             </a>
             <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" id="ta1" href="#">Index</a></li>
-              <li><a class="dropdown-item" id="ta2" href="stocks.html">Stocks</a></li>
+              <li><a class="dropdown-item" id="ta2" href="../HTML Code/stocks.html">Stocks</a></li>
               <li><a class="dropdown-item" id="ta3" href="#">Request Chart</a></li>
             </ul>
           </li>
@@ -66,7 +66,7 @@
               More
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" id="fa1" href="aboutus.html">About Us</a></li>
+              <li><a class="dropdown-item" id="fa1" href="../HTML Code/aboutus.html">About Us</a></li>
               <li><a class="dropdown-item" id="fa2" href="#" data-bs-toggle="modal"
                   data-bs-target="#contactModal">Contact Us</a></li>
               <!-- <li><a class="dropdown-item" href="#">Request Chart</a></li> -->
@@ -255,509 +255,510 @@
   <div class="container">
 
     <form class="d-flex stocksearch" onsubmit="return false">
-      <input class="form-control stocksearchinput" list="datalistOptions" autocomplete="off" type="search" placeholder="Search" aria-label="Search" id="inputsearch" >
-      <datalist id="datalistOptions">       
-        <option value="3MINDIA"></option>
-        <option value="ABB"></option>
-        <option value="ACC"></option>
-        <option value="AIAENG"></option>
-        <option value="APLAPOLLO"></option>
-        <option value="AUBANK"></option>
-        <option value="AARTIDRUGS"></option>
-        <option value="AAVAS"></option>
-        <option value="ABBOTINDIA"></option>
-        <option value="ADANIENT"></option>
-        <option value="ADANIGREEN"></option>
-        <option value="ADANIPORTS"></option>
-        <option value="ATGL"></option>
-        <option value="ADANITRANS"></option>
-        <option value="AWL"></option>
-        <option value="ABCAPITAL"></option>
-        <option value="ABFRL"></option>
-        <option value="ABSLAMC"></option>
-        <option value="AEGISCHEM"></option>
-        <option value="AETHER"></option>
-        <option value="AFFLE"></option>
-        <option value="AJANTPHARM"></option>
-        <option value="APLLTD"></option>
-        <option value="ALKEM"></option>
-        <option value="ALKYLAMINE"></option>
-        <option value="ALLCARGO"></option>
-        <option value="ALOKINDS"></option>
-        <option value="AMARAJABAT"></option>
-        <option value="AMBER"></option>
-        <option value="AMBUJACEM"></option>
-        <option value="ANGELONE"></option>
-        <option value="ANURAS"></option>
-        <option value="APOLLOHOSP"></option>
-        <option value="APOLLOTYRE"></option>
-        <option value="APTUS"></option>
-        <option value="ASAHIINDIA"></option>
-        <option value="ASHOKLEY"></option>
-        <option value="ASIANPAINT"></option>
-        <option value="ASTERDM"></option>
-        <option value="ASTRAZEN"></option>
-        <option value="ASTRAL"></option>
-        <option value="ATUL"></option>
-        <option value="AUROPHARMA"></option>
-        <option value="AVANTIFEED"></option>
-        <option value="DMART"></option>
-        <option value="AXISBANK"></option>
-        <option value="BASF"></option>
-        <option value="BSE"></option>
-        <option value="BAJAJ-AUTO"></option>
-        <option value="BAJAJELEC"></option>
-        <option value="BAJFINANCE"></option>
-        <option value="BAJAJFINSV"></option>
-        <option value="BAJAJHLDNG"></option>
-        <option value="BALAMINES"></option>
-        <option value="BALKRISIND"></option>
-        <option value="BALRAMCHIN"></option>
-        <option value="BANDHANBNK"></option>
-        <option value="BANKBARODA"></option>
-        <option value="BANKINDIA"></option>
-        <option value="MAHABANK"></option>
-        <option value="BATAINDIA"></option>
-        <option value="BAYERCROP"></option>
-        <option value="BERGEPAINT"></option>
-        <option value="BDL"></option>
-        <option value="BEL"></option>
-        <option value="BHARATFORG"></option>
-        <option value="BHEL"></option>
-        <option value="BPCL"></option>
-        <option value="BHARATRAS"></option>
-        <option value="BHARTIARTL"></option>
-        <option value="BIOCON"></option>
-        <option value="BIRLACORPN"></option>
-        <option value="BSOFT"></option>
-        <option value="BLUEDART"></option>
-        <option value="BLUESTARCO"></option>
-        <option value="BBTC"></option>
-        <option value="BORORENEW"></option>
-        <option value="BOSCHLTD"></option>
-        <option value="BRIGADE"></option>
-        <option value="BCG"></option>
-        <option value="BRITANNIA"></option>
-        <option value="MAPMYINDIA"></option>
-        <option value="CCL"></option>
-        <option value="CESC"></option>
-        <option value="CGPOWER"></option>
-        <option value="CRISIL"></option>
-        <option value="CSBBANK"></option>
-        <option value="CAMPUS"></option>
-        <option value="CANFINHOME"></option>
-        <option value="CANBK"></option>
-        <option value="CAPLIPOINT"></option>
-        <option value="CGCL"></option>
-        <option value="CARBORUNIV"></option>
-        <option value="CASTROLIND"></option>
-        <option value="CEATLTD"></option>
-        <option value="CENTRALBK"></option>
-        <option value="CDSL"></option>
-        <option value="CENTURYPLY"></option>
-        <option value="CENTURYTEX"></option>
-        <option value="CERA"></option>
-        <option value="CHALET"></option>
-        <option value="CHAMBLFERT"></option>
-        <option value="CHEMPLASTS"></option>
-        <option value="CHOLAHLDNG"></option>
-        <option value="CHOLAFIN"></option>
-        <option value="CIPLA"></option>
-        <option value="CUB"></option>
-        <option value="CLEAN"></option>
-        <option value="COALINDIA"></option>
-        <option value="COCHINSHIP"></option>
-        <option value="COFORGE"></option>
-        <option value="COLPAL"></option>
-        <option value="CAMS"></option>
-        <option value="CONCOR"></option>
-        <option value="COROMANDEL"></option>
-        <option value="CREDITACC"></option>
-        <option value="CROMPTON"></option>
-        <option value="CUMMINSIND"></option>
-        <option value="CYIENT"></option>
-        <option value="DCMSHRIRAM"></option>
-        <option value="DLF"></option>
-        <option value="DABUR"></option>
-        <option value="DALBHARAT"></option>
-        <option value="DEEPAKFERT"></option>
-        <option value="DEEPAKNTR"></option>
-        <option value="DELHIVERY"></option>
-        <option value="DELTACORP"></option>
-        <option value="DEVYANI"></option>
-        <option value="DHANI"></option>
-        <option value="DBL"></option>
-        <option value="DIVISLAB"></option>
-        <option value="DIXON"></option>
-        <option value="LALPATHLAB"></option>
-        <option value="DRREDDY"></option>
-        <option value="EIDPARRY"></option>
-        <option value="EIHOTEL"></option>
-        <option value="EPL"></option>
-        <option value="EASEMYTRIP"></option>
-        <option value="EDELWEISS"></option>
-        <option value="EICHERMOT"></option>
-        <option value="ELGIEQUIP"></option>
-        <option value="EMAMILTD"></option>
-        <option value="ENDURANCE"></option>
-        <option value="ENGINERSIN"></option>
-        <option value="EQUITASBNK"></option>
-        <option value="ESCORTS"></option>
-        <option value="EXIDEIND"></option>
-        <option value="FDC"></option>
-        <option value="NYKAA"></option>
-        <option value="FEDERALBNK"></option>
-        <option value="FACT"></option>
-        <option value="FINEORG"></option>
-        <option value="FINCABLES"></option>
-        <option value="FINPIPE"></option>
-        <option value="FSL"></option>
-        <option value="FORTIS"></option>
-        <option value="GRINFRA"></option>
-        <option value="GAIL"></option>
-        <option value="GMMPFAUDLR"></option>
-        <option value="GMRINFRA"></option>
-        <option value="GALAXYSURF"></option>
-        <option value="GARFIBRES"></option>
-        <option value="GICRE"></option>
-        <option value="GLAND"></option>
-        <option value="GLAXO"></option>
-        <option value="GLENMARK"></option>
-        <option value="GOCOLORS"></option>
-        <option value="GODFRYPHLP"></option>
-        <option value="GODREJAGRO"></option>
-        <option value="GODREJCP"></option>
-        <option value="GODREJIND"></option>
-        <option value="GODREJPROP"></option>
-        <option value="GRANULES"></option>
-        <option value="GRAPHITE"></option>
-        <option value="GRASIM"></option>
-        <option value="GESHIP"></option>
-        <option value="GREENPANEL"></option>
-        <option value="GRINDWELL"></option>
-        <option value="GUJALKALI"></option>
-        <option value="GAEL"></option>
-        <option value="FLUOROCHEM"></option>
-        <option value="GUJGASLTD"></option>
-        <option value="GNFC"></option>
-        <option value="GPPL"></option>
-        <option value="GSFC"></option>
-        <option value="GSPL"></option>
-        <option value="HEG"></option>
-        <option value="HCLTECH"></option>
-        <option value="HDFCAMC"></option>
-        <option value="HDFCBANK"></option>
-        <option value="HDFCLIFE"></option>
-        <option value="HFCL"></option>
-        <option value="HLEGLAS"></option>
-        <option value="HAPPSTMNDS"></option>
-        <option value="HATSUN"></option>
-        <option value="HAVELLS"></option>
-        <option value="HEROMOTOCO"></option>
-        <option value="HIKAL"></option>
-        <option value="HINDALCO"></option>
-        <option value="HGS"></option>
-        <option value="HAL"></option>
-        <option value="HINDCOPPER"></option>
-        <option value="HINDPETRO"></option>
-        <option value="HINDUNILVR"></option>
-        <option value="HINDZINC"></option>
-        <option value="POWERINDIA"></option>
-        <option value="HOMEFIRST"></option>
-        <option value="HONAUT"></option>
-        <option value="HUDCO"></option>
-        <option value="HDFC"></option>
-        <option value="ICICIBANK"></option>
-        <option value="ICICIGI"></option>
-        <option value="ICICIPRULI"></option>
-        <option value="ISEC"></option>
-        <option value="IDBI"></option>
-        <option value="IDFCFIRSTB"></option>
-        <option value="IDFC"></option>
-        <option value="IFBIND"></option>
-        <option value="IIFL"></option>
-        <option value="IIFLWAM"></option>
-        <option value="IRB"></option>
-        <option value="ITC"></option>
-        <option value="ITI"></option>
-        <option value="INDIACEM"></option>
-        <option value="IBULHSGFIN"></option>
-        <option value="IBREALEST"></option>
-        <option value="INDIAMART"></option>
-        <option value="INDIANB"></option>
-        <option value="IEX"></option>
-        <option value="INDHOTEL"></option>
-        <option value="IOC"></option>
-        <option value="IOB"></option>
-        <option value="IRCTC"></option>
-        <option value="IRFC"></option>
-        <option value="INDIGOPNTS"></option>
-        <option value="INDOCO"></option>
-        <option value="IGL"></option>
-        <option value="INDUSTOWER"></option>
-        <option value="INDUSINDBK"></option>
-        <option value="INFIBEAM"></option>
-        <option value="NAUKRI"></option>
-        <option value="INFY"></option>
-        <option value="INOXLEISUR"></option>
-        <option value="INTELLECT"></option>
-        <option value="INDIGO"></option>
-        <option value="IPCALAB"></option>
-        <option value="JBCHEPHARM"></option>
-        <option value="JKCEMENT"></option>
-        <option value="JBMA"></option>
-        <option value="JKLAKSHMI"></option>
-        <option value="JKPAPER"></option>
-        <option value="JMFINANCIL"></option>
-        <option value="JSWENERGY"></option>
-        <option value="JSWSTEEL"></option>
-        <option value="JAMNAAUTO"></option>
-        <option value="JSL"></option>
-        <option value="JINDALSTEL"></option>
-        <option value="JUBLFOOD"></option>
-        <option value="JUBLINGREA"></option>
-        <option value="JUBLPHARMA"></option>
-        <option value="JUSTDIAL"></option>
-        <option value="JYOTHYLAB"></option>
-        <option value="KPRMILL"></option>
-        <option value="KEI"></option>
-        <option value="KNRCON"></option>
-        <option value="KPITTECH"></option>
-        <option value="KRBL"></option>
-        <option value="KAJARIACER"></option>
-        <option value="KALPATPOWR"></option>
-        <option value="KALYANKJIL"></option>
-        <option value="KANSAINER"></option>
-        <option value="KARURVYSYA"></option>
-        <option value="KEC"></option>
-        <option value="KOTAKBANK"></option>
-        <option value="KIMS"></option>
-        <option value="L&TFH"></option>
-        <option value="LTTS"></option>
-        <option value="LICHSGFIN"></option>
-        <option value="LAXMIMACH"></option>
-        <option value="LTI"></option>
-        <option value="LT"></option>
-        <option value="LATENTVIEW"></option>
-        <option value="LAURUSLABS"></option>
-        <option value="LXCHEM"></option>
-        <option value="LICI"></option>
-        <option value="LINDEINDIA"></option>
-        <option value="LUPIN"></option>
-        <option value="LUXIND"></option>
-        <option value="MMTC"></option>
-        <option value="MOIL"></option>
-        <option value="MRF"></option>
-        <option value="MTARTECH"></option>
-        <option value="LODHA"></option>
-        <option value="MGL"></option>
-        <option value="M&MFIN"></option>
-        <option value="M&M"></option>
-        <option value="MAHINDCIE"></option>
-        <option value="MHRIL"></option>
-        <option value="MAHLIFE"></option>
-        <option value="MAHLOG"></option>
-        <option value="MANAPPURAM"></option>
-        <option value="MRPL"></option>
-        <option value="MARICO"></option>
-        <option value="MARUTI"></option>
-        <option value="MASTEK"></option>
-        <option value="MFSL"></option>
-        <option value="MAXHEALTH"></option>
-        <option value="MAZDOCK"></option>
-        <option value="MEDPLUS"></option>
-        <option value="METROBRAND"></option>
-        <option value="METROPOLIS"></option>
-        <option value="MSUMI"></option>
-        <option value="MOTILALOFS"></option>
-        <option value="MPHASIS"></option>
-        <option value="MCX"></option>
-        <option value="MUTHOOTFIN"></option>
-        <option value="NATCOPHARM"></option>
-        <option value="NBCC"></option>
-        <option value="NCC"></option>
-        <option value="NHPC"></option>
-        <option value="NIITLTD"></option>
-        <option value="NLCINDIA"></option>
-        <option value="NOCIL"></option>
-        <option value="NTPC"></option>
-        <option value="NH"></option>
-        <option value="NATIONALUM"></option>
-        <option value="NAVINFLUOR"></option>
-        <option value="NAZARA"></option>
-        <option value="NESTLEIND"></option>
-        <option value="NETWORK18"></option>
-        <option value="NAM-INDIA"></option>
-        <option value="NUVOCO"></option>
-        <option value="OBEROIRLTY"></option>
-        <option value="ONGC"></option>
-        <option value="OIL"></option>
-        <option value="OLECTRA"></option>
-        <option value="PAYTM"></option>
-        <option value="OFSS"></option>
-        <option value="ORIENTELEC"></option>
-        <option value="POLICYBZR"></option>
-        <option value="PCBL"></option>
-        <option value="PIIND"></option>
-        <option value="PNBHOUSING"></option>
-        <option value="PNCINFRA"></option>
-        <option value="PVR"></option>
-        <option value="PAGEIND"></option>
-        <option value="PATANJALI"></option>
-        <option value="PERSISTENT"></option>
-        <option value="PETRONET"></option>
-        <option value="PFIZER"></option>
-        <option value="PHOENIXLTD"></option>
-        <option value="PIDILITIND"></option>
-        <option value="POLYMED"></option>
-        <option value="POLYCAB"></option>
-        <option value="POLYPLEX"></option>
-        <option value="POONAWALLA"></option>
-        <option value="PFC"></option>
-        <option value="POWERGRID"></option>
-        <option value="PRAJIND"></option>
-        <option value="PRESTIGE"></option>
-        <option value="PRINCEPIPE"></option>
-        <option value="PRSMJOHNSN"></option>
-        <option value="PRIVISCL"></option>
-        <option value="PGHL"></option>
-        <option value="PGHH"></option>
-        <option value="PNB"></option>
-        <option value="QUESS"></option>
-        <option value="RBLBANK"></option>
-        <option value="RECLTD"></option>
-        <option value="RHIM"></option>
-        <option value="RITES"></option>
-        <option value="RADICO"></option>
-        <option value="RVNL"></option>
-        <option value="RAIN"></option>
-        <option value="RAJESHEXPO"></option>
-        <option value="RALLIS"></option>
-        <option value="RCF"></option>
-        <option value="RATNAMANI"></option>
-        <option value="RTNINDIA"></option>
-        <option value="RAYMOND"></option>
-        <option value="REDINGTON"></option>
-        <option value="RELAXO"></option>
-        <option value="RELIANCE"></option>
-        <option value="RBA"></option>
-        <option value="ROSSARI"></option>
-        <option value="ROUTE"></option>
-        <option value="SBICARD"></option>
-        <option value="SBILIFE"></option>
-        <option value="SIS"></option>
-        <option value="SJVN"></option>
-        <option value="SKFINDIA"></option>
-        <option value="SRF"></option>
-        <option value="MOTHERSON"></option>
-        <option value="SANOFI"></option>
-        <option value="SAPPHIRE"></option>
-        <option value="SAREGAMA"></option>
-        <option value="SCHAEFFLER"></option>
-        <option value="SHARDACROP"></option>
-        <option value="SFL"></option>
-        <option value="SHILPAMED"></option>
-        <option value="SCI"></option>
-        <option value="SHOPERSTOP"></option>
-        <option value="SHREECEM"></option>
-        <option value="RENUKA"></option>
-        <option value="SRTRANSFIN"></option>
-        <option value="SHYAMMETL"></option>
-        <option value="SIEMENS"></option>
-        <option value="SOBHA"></option>
-        <option value="SOLARINDS"></option>
-        <option value="SONACOMS"></option>
-        <option value="SONATSOFTW"></option>
-        <option value="STARHEALTH"></option>
-        <option value="SBIN"></option>
-        <option value="SAIL"></option>
-        <option value="SWSOLAR"></option>
-        <option value="STLTECH"></option>
-        <option value="SUDARSCHEM"></option>
-        <option value="SUMICHEM"></option>
-        <option value="SPARC"></option>
-        <option value="SUNPHARMA"></option>
-        <option value="SUNTV"></option>
-        <option value="SUNDARMFIN"></option>
-        <option value="SUNDRMFAST"></option>
-        <option value="SUNTECK"></option>
-        <option value="SUPRAJIT"></option>
-        <option value="SUPREMEIND"></option>
-        <option value="SUVENPHAR"></option>
-        <option value="SUZLON"></option>
-        <option value="SWANENERGY"></option>
-        <option value="SYMPHONY"></option>
-        <option value="SYNGENE"></option>
-        <option value="TCIEXP"></option>
-        <option value="TCNSBRANDS"></option>
-        <option value="TTKPRESTIG"></option>
-        <option value="TV18BRDCST"></option>
-        <option value="TVSMOTOR"></option>
-        <option value="TANLA"></option>
-        <option value="TATACHEM"></option>
-        <option value="TATACOFFEE"></option>
-        <option value="TATACOMM"></option>
-        <option value="TCS"></option>
-        <option value="TATACONSUM"></option>
-        <option value="TATAELXSI"></option>
-        <option value="TATAINVEST"></option>
-        <option value="TATAMTRDVR"></option>
-        <option value="TATAMOTORS"></option>
-        <option value="TATAPOWER"></option>
-        <option value="TATASTEEL"></option>
-        <option value="TTML"></option>
-        <option value="TEAMLEASE"></option>
-        <option value="TECHM"></option>
-        <option value="TEJASNET"></option>
-        <option value="NIACL"></option>
-        <option value="RAMCOCEM"></option>
-        <option value="THERMAX"></option>
-        <option value="THYROCARE"></option>
-        <option value="TIMKEN"></option>
-        <option value="TITAN"></option>
-        <option value="TORNTPHARM"></option>
-        <option value="TORNTPOWER"></option>
-        <option value="TCI"></option>
-        <option value="TRENT"></option>
-        <option value="TRIDENT"></option>
-        <option value="TRIVENI"></option>
-        <option value="TRITURBINE"></option>
-        <option value="TIINDIA"></option>
-        <option value="UFLEX"></option>
-        <option value="UNOMINDA"></option>
-        <option value="UPL"></option>
-        <option value="UTIAMC"></option>
-        <option value="ULTRACEMCO"></option>
-        <option value="UNIONBANK"></option>
-        <option value="UBL"></option>
-        <option value="MCDOWELL-N"></option>
-        <option value="VGUARD"></option>
-        <option value="VMART"></option>
-        <option value="VIPIND"></option>
-        <option value="VAIBHAVGBL"></option>
-        <option value="VTL"></option>
-        <option value="VARROC"></option>
-        <option value="VBL"></option>
-        <option value="MANYAVAR"></option>
-        <option value="VEDL"></option>
-        <option value="VIJAYA"></option>
-        <option value="VINATIORGA"></option>
-        <option value="IDEA"></option>
-        <option value="VOLTAS"></option>
-        <option value="WELCORP"></option>
-        <option value="WELSPUNIND"></option>
-        <option value="WESTLIFE"></option>
-        <option value="WHIRLPOOL"></option>
-        <option value="WIPRO"></option>
-        <option value="WOCKPHARMA"></option>
-        <option value="YESBANK"></option>
-        <option value="ZFCVINDIA"></option>
-        <option value="ZEEL"></option>
-        <option value="ZENSARTECH"></option>
-        <option value="ZOMATO"></option>
-        <option value="ZYDUSLIFE"></option>
-        <option value="ZYDUSWELL"></option>
-        <option value="ECLERX"></option>
+      <input class="form-control stocksearchinput" list="datalistOptions" autocomplete="off" type="text"
+        placeholder="Search" aria-label="Search" id="inputsearch" onchange="return getData()">
+      <datalist id="datalistOptions">
+          <option id="1" value="3MINDIA"></option>
+          <option id="2" value="ABB"></option>
+          <option id="3" value="ACC"></option>
+          <option id="4" value="AIAENG"></option>
+          <option id="5" value="APLAPOLLO"></option>
+          <option id="6" value="AUBANK"></option>
+          <option id="7" value="AARTIDRUGS"></option>
+          <option id="8" value="AAVAS"></option>
+          <option id="9" value="ABBOTINDIA"></option>
+          <option id="10" value="ADANIENT"></option>
+          <option id="11" value="ADANIGREEN"></option>
+          <option id="12" value="ADANIPORTS"></option>
+          <option id="13" value="ATGL"></option>
+          <option id="14" value="ADANITRANS"></option>
+          <option id="15" value="AWL"></option>
+          <option id="16" value="ABCAPITAL"></option>
+          <option id="17" value="ABFRL"></option>
+          <option id="18" value="ABSLAMC"></option>
+          <option id="19" value="AEGISCHEM"></option>
+          <option id="20" value="AETHER"></option>
+          <option id="21" value="AFFLE"></option>
+          <option id="22" value="AJANTPHARM"></option>
+          <option id="23" value="APLLTD"></option>
+          <option id="24" value="ALKEM"></option>
+          <option id="25" value="ALKYLAMINE"></option>
+          <option id="26" value="ALLCARGO"></option>
+          <option id="27" value="ALOKINDS"></option>
+          <option id="28" value="AMARAJABAT"></option>
+          <option id="29" value="AMBER"></option>
+          <option id="30" value="AMBUJACEM"></option>
+          <option id="31" value="ANGELONE"></option>
+          <option id="32" value="ANURAS"></option>
+          <option id="33" value="APOLLOHOSP"></option>
+          <option id="34" value="APOLLOTYRE"></option>
+          <option id="35" value="APTUS"></option>
+          <option id="36" value="ASAHIINDIA"></option>
+          <option id="37" value="ASHOKLEY"></option>
+          <option id="38" value="ASIANPAINT"></option>
+          <option id="39" value="ASTERDM"></option>
+          <option id="40" value="ASTRAZEN"></option>
+          <option id="41" value="ASTRAL"></option>
+          <option id="42" value="ATUL"></option>
+          <option id="43" value="AUROPHARMA"></option>
+          <option id="44" value="AVANTIFEED"></option>
+          <option id="45" value="DMART"></option>
+          <option id="46" value="AXISBANK"></option>
+          <option id="47" value="BASF"></option>
+          <option id="48" value="BSE"></option>
+          <option id="49" value="BAJAJ-AUTO"></option>
+          <option id="50" value="BAJAJELEC"></option>
+          <option id="51" value="BAJFINANCE"></option>
+          <option id="52" value="BAJAJFINSV"></option>
+          <option id="53" value="BAJAJHLDNG"></option>
+          <option id="54" value="BALAMINES"></option>
+          <option id="55" value="BALKRISIND"></option>
+          <option id="56" value="BALRAMCHIN"></option>
+          <option id="57" value="BANDHANBNK"></option>
+          <option id="58" value="BANKBARODA"></option>
+          <option id="59" value="BANKINDIA"></option>
+          <option id="60" value="MAHABANK"></option>
+          <option id="61" value="BATAINDIA"></option>
+          <option id="62" value="BAYERCROP"></option>
+          <option id="63" value="BERGEPAINT"></option>
+          <option id="64" value="BDL"></option>
+          <option id="65" value="BEL"></option>
+          <option id="66" value="BHARATFORG"></option>
+          <option id="67" value="BHEL"></option>
+          <option id="68" value="BPCL"></option>
+          <option id="69" value="BHARATRAS"></option>
+          <option id="70" value="BHARTIARTL"></option>
+          <option id="71" value="BIOCON"></option>
+          <option id="72" value="BIRLACORPN"></option>
+          <option id="73" value="BSOFT"></option>
+          <option id="74" value="BLUEDART"></option>
+          <option id="75" value="BLUESTARCO"></option>
+          <option id="76" value="BBTC"></option>
+          <option id="77" value="BORORENEW"></option>
+          <option id="78" value="BOSCHLTD"></option>
+          <option id="79" value="BRIGADE"></option>
+          <option id="80" value="BCG"></option>
+          <option id="81" value="BRITANNIA"></option>
+          <option id="82" value="MAPMYINDIA"></option>
+          <option id="83" value="CCL"></option>
+          <option id="84" value="CESC"></option>
+          <option id="85" value="CGPOWER"></option>
+          <option id="86" value="CRISIL"></option>
+          <option id="87" value="CSBBANK"></option>
+          <option id="88" value="CAMPUS"></option>
+          <option id="89" value="CANFINHOME"></option>
+          <option id="90" value="CANBK"></option>
+          <option id="91" value="CAPLIPOINT"></option>
+          <option id="92" value="CGCL"></option>
+          <option id="93" value="CARBORUNIV"></option>
+          <option id="94" value="CASTROLIND"></option>
+          <option id="95" value="CEATLTD"></option>
+          <option id="96" value="CENTRALBK"></option>
+          <option id="97" value="CDSL"></option>
+          <option id="98" value="CENTURYPLY"></option>
+          <option id="99" value="CENTURYTEX"></option>
+          <option id="100" value="CERA"></option>
+          <option id="101" value="CHALET"></option>
+          <option id="102" value="CHAMBLFERT"></option>
+          <option id="103" value="CHEMPLASTS"></option>
+          <option id="104" value="CHOLAHLDNG"></option>
+          <option id="105" value="CHOLAFIN"></option>
+          <option id="106" value="CIPLA"></option>
+          <option id="107" value="CUB"></option>
+          <option id="108" value="CLEAN"></option>
+          <option id="109" value="COALINDIA"></option>
+          <option id="110" value="COCHINSHIP"></option>
+          <option id="111" value="COFORGE"></option>
+          <option id="112" value="COLPAL"></option>
+          <option id="113" value="CAMS"></option>
+          <option id="114" value="CONCOR"></option>
+          <option id="115" value="COROMANDEL"></option>
+          <option id="116" value="CREDITACC"></option>
+          <option id="117" value="CROMPTON"></option>
+          <option id="118" value="CUMMINSIND"></option>
+          <option id="119" value="CYIENT"></option>
+          <option id="120" value="DCMSHRIRAM"></option>
+          <option id="121" value="DLF"></option>
+          <option id="122" value="DABUR"></option>
+          <option id="123" value="DALBHARAT"></option>
+          <option id="124" value="DEEPAKFERT"></option>
+          <option id="125" value="DEEPAKNTR"></option>
+          <option id="126" value="DELHIVERY"></option>
+          <option id="127" value="DELTACORP"></option>
+          <option id="128" value="DEVYANI"></option>
+          <option id="129" value="DHANI"></option>
+          <option id="130" value="DBL"></option>
+          <option id="131" value="DIVISLAB"></option>
+          <option id="132" value="DIXON"></option>
+          <option id="133" value="LALPATHLAB"></option>
+          <option id="134" value="DRREDDY"></option>
+          <option id="135" value="EIDPARRY"></option>
+          <option id="136" value="EIHOTEL"></option>
+          <option id="137" value="EPL"></option>
+          <option id="138" value="EASEMYTRIP"></option>
+          <option id="139" value="EDELWEISS"></option>
+          <option id="140" value="EICHERMOT"></option>
+          <option id="141" value="ELGIEQUIP"></option>
+          <option id="142" value="EMAMILTD"></option>
+          <option id="143" value="ENDURANCE"></option>
+          <option id="144" value="ENGINERSIN"></option>
+          <option id="145" value="EQUITASBNK"></option>
+          <option id="146" value="ESCORTS"></option>
+          <option id="147" value="EXIDEIND"></option>
+          <option id="148" value="FDC"></option>
+          <option id="149" value="NYKAA"></option>
+          <option id="150" value="FEDERALBNK"></option>
+          <option id="151" value="FACT"></option>
+          <option id="152" value="FINEORG"></option>
+          <option id="153" value="FINCABLES"></option>
+          <option id="154" value="FINPIPE"></option>
+          <option id="155" value="FSL"></option>
+          <option id="156" value="FORTIS"></option>
+          <option id="157" value="GRINFRA"></option>
+          <option id="158" value="GAIL"></option>
+          <option id="159" value="GMMPFAUDLR"></option>
+          <option id="160" value="GMRINFRA"></option>
+          <option id="161" value="GALAXYSURF"></option>
+          <option id="162" value="GARFIBRES"></option>
+          <option id="163" value="GICRE"></option>
+          <option id="164" value="GLAND"></option>
+          <option id="165" value="GLAXO"></option>
+          <option id="166" value="GLENMARK"></option>
+          <option id="167" value="GOCOLORS"></option>
+          <option id="168" value="GODFRYPHLP"></option>
+          <option id="169" value="GODREJAGRO"></option>
+          <option id="170" value="GODREJCP"></option>
+          <option id="171" value="GODREJIND"></option>
+          <option id="172" value="GODREJPROP"></option>
+          <option id="173" value="GRANULES"></option>
+          <option id="174" value="GRAPHITE"></option>
+          <option id="175" value="GRASIM"></option>
+          <option id="176" value="GESHIP"></option>
+          <option id="177" value="GREENPANEL"></option>
+          <option id="178" value="GRINDWELL"></option>
+          <option id="179" value="GUJALKALI"></option>
+          <option id="180" value="GAEL"></option>
+          <option id="181" value="FLUOROCHEM"></option>
+          <option id="182" value="GUJGASLTD"></option>
+          <option id="183" value="GNFC"></option>
+          <option id="184" value="GPPL"></option>
+          <option id="185" value="GSFC"></option>
+          <option id="186" value="GSPL"></option>
+          <option id="187" value="HEG"></option>
+          <option id="188" value="HCLTECH"></option>
+          <option id="189" value="HDFCAMC"></option>
+          <option id="190" value="HDFCBANK"></option>
+          <option id="191" value="HDFCLIFE"></option>
+          <option id="192" value="HFCL"></option>
+          <option id="193" value="HLEGLAS"></option>
+          <option id="194" value="HAPPSTMNDS"></option>
+          <option id="195" value="HATSUN"></option>
+          <option id="196" value="HAVELLS"></option>
+          <option id="197" value="HEROMOTOCO"></option>
+          <option id="198" value="HIKAL"></option>
+          <option id="199" value="HINDALCO"></option>
+          <option id="200" value="HGS"></option>
+          <option id="201" value="HAL"></option>
+          <option id="202" value="HINDCOPPER"></option>
+          <option id="203" value="HINDPETRO"></option>
+          <option id="204" value="HINDUNILVR"></option>
+          <option id="205" value="HINDZINC"></option>
+          <option id="206" value="POWERINDIA"></option>
+          <option id="207" value="HOMEFIRST"></option>
+          <option id="208" value="HONAUT"></option>
+          <option id="209" value="HUDCO"></option>
+          <option id="210" value="HDFC"></option>
+          <option id="211" value="ICICIBANK"></option>
+          <option id="212" value="ICICIGI"></option>
+          <option id="213" value="ICICIPRULI"></option>
+          <option id="214" value="ISEC"></option>
+          <option id="215" value="IDBI"></option>
+          <option id="216" value="IDFCFIRSTB"></option>
+          <option id="217" value="IDFC"></option>
+          <option id="218" value="IFBIND"></option>
+          <option id="219" value="IIFL"></option>
+          <option id="220" value="IIFLWAM"></option>
+          <option id="221" value="IRB"></option>
+          <option id="222" value="ITC"></option>
+          <option id="223" value="ITI"></option>
+          <option id="224" value="INDIACEM"></option>
+          <option id="225" value="IBULHSGFIN"></option>
+          <option id="226" value="IBREALEST"></option>
+          <option id="227" value="INDIAMART"></option>
+          <option id="228" value="INDIANB"></option>
+          <option id="229" value="IEX"></option>
+          <option id="230" value="INDHOTEL"></option>
+          <option id="231" value="IOC"></option>
+          <option id="232" value="IOB"></option>
+          <option id="233" value="IRCTC"></option>
+          <option id="234" value="IRFC"></option>
+          <option id="235" value="INDIGOPNTS"></option>
+          <option id="236" value="INDOCO"></option>
+          <option id="237" value="IGL"></option>
+          <option id="238" value="INDUSTOWER"></option>
+          <option id="239" value="INDUSINDBK"></option>
+          <option id="240" value="INFIBEAM"></option>
+          <option id="241" value="NAUKRI"></option>
+          <option id="242" value="INFY"></option>
+          <option id="243" value="INOXLEISUR"></option>
+          <option id="244" value="INTELLECT"></option>
+          <option id="245" value="INDIGO"></option>
+          <option id="246" value="IPCALAB"></option>
+          <option id="247" value="JBCHEPHARM"></option>
+          <option id="248" value="JKCEMENT"></option>
+          <option id="249" value="JBMA"></option>
+          <option id="250" value="JKLAKSHMI"></option>
+          <option id="251" value="JKPAPER"></option>
+          <option id="252" value="JMFINANCIL"></option>
+          <option id="253" value="JSWENERGY"></option>
+          <option id="254" value="JSWSTEEL"></option>
+          <option id="255" value="JAMNAAUTO"></option>
+          <option id="256" value="JSL"></option>
+          <option id="257" value="JINDALSTEL"></option>
+          <option id="258" value="JUBLFOOD"></option>
+          <option id="259" value="JUBLINGREA"></option>
+          <option id="260" value="JUBLPHARMA"></option>
+          <option id="261" value="JUSTDIAL"></option>
+          <option id="262" value="JYOTHYLAB"></option>
+          <option id="263" value="KPRMILL"></option>
+          <option id="264" value="KEI"></option>
+          <option id="265" value="KNRCON"></option>
+          <option id="266" value="KPITTECH"></option>
+          <option id="267" value="KRBL"></option>
+          <option id="268" value="KAJARIACER"></option>
+          <option id="269" value="KALPATPOWR"></option>
+          <option id="270" value="KALYANKJIL"></option>
+          <option id="271" value="KANSAINER"></option>
+          <option id="272" value="KARURVYSYA"></option>
+          <option id="273" value="KEC"></option>
+          <option id="274" value="KOTAKBANK"></option>
+          <option id="275" value="KIMS"></option>
+          <option id="276" value="L&TFH"></option>
+          <option id="277" value="LTTS"></option>
+          <option id="278" value="LICHSGFIN"></option>
+          <option id="279" value="LAXMIMACH"></option>
+          <option id="280" value="LTI"></option>
+          <option id="281" value="LT"></option>
+          <option id="282" value="LATENTVIEW"></option>
+          <option id="283" value="LAURUSLABS"></option>
+          <option id="284" value="LXCHEM"></option>
+          <option id="285" value="LICI"></option>
+          <option id="286" value="LINDEINDIA"></option>
+          <option id="287" value="LUPIN"></option>
+          <option id="288" value="LUXIND"></option>
+          <option id="289" value="MMTC"></option>
+          <option id="290" value="MOIL"></option>
+          <option id="291" value="MRF"></option>
+          <option id="292" value="MTARTECH"></option>
+          <option id="293" value="LODHA"></option>
+          <option id="294" value="MGL"></option>
+          <option id="295" value="M&MFIN"></option>
+          <option id="296" value="M&M"></option>
+          <option id="297" value="MAHINDCIE"></option>
+          <option id="298" value="MHRIL"></option>
+          <option id="299" value="MAHLIFE"></option>
+          <option id="300" value="MAHLOG"></option>
+          <option id="301" value="MANAPPURAM"></option>
+          <option id="302" value="MRPL"></option>
+          <option id="303" value="MARICO"></option>
+          <option id="304" value="MARUTI"></option>
+          <option id="305" value="MASTEK"></option>
+          <option id="306" value="MFSL"></option>
+          <option id="307" value="MAXHEALTH"></option>
+          <option id="308" value="MAZDOCK"></option>
+          <option id="309" value="MEDPLUS"></option>
+          <option id="310" value="METROBRAND"></option>
+          <option id="311" value="METROPOLIS"></option>
+          <option id="312" value="MSUMI"></option>
+          <option id="313" value="MOTILALOFS"></option>
+          <option id="314" value="MPHASIS"></option>
+          <option id="315" value="MCX"></option>
+          <option id="316" value="MUTHOOTFIN"></option>
+          <option id="317" value="NATCOPHARM"></option>
+          <option id="318" value="NBCC"></option>
+          <option id="319" value="NCC"></option>
+          <option id="320" value="NHPC"></option>
+          <option id="321" value="NIITLTD"></option>
+          <option id="322" value="NLCINDIA"></option>
+          <option id="323" value="NOCIL"></option>
+          <option id="324" value="NTPC"></option>
+          <option id="325" value="NH"></option>
+          <option id="326" value="NATIONALUM"></option>
+          <option id="327" value="NAVINFLUOR"></option>
+          <option id="328" value="NAZARA"></option>
+          <option id="329" value="NESTLEIND"></option>
+          <option id="330" value="NETWORK18"></option>
+          <option id="331" value="NAM-INDIA"></option>
+          <option id="332" value="NUVOCO"></option>
+          <option id="333" value="OBEROIRLTY"></option>
+          <option id="334" value="ONGC"></option>
+          <option id="335" value="OIL"></option>
+          <option id="336" value="OLECTRA"></option>
+          <option id="337" value="PAYTM"></option>
+          <option id="338" value="OFSS"></option>
+          <option id="339" value="ORIENTELEC"></option>
+          <option id="340" value="POLICYBZR"></option>
+          <option id="341" value="PCBL"></option>
+          <option id="342" value="PIIND"></option>
+          <option id="343" value="PNBHOUSING"></option>
+          <option id="344" value="PNCINFRA"></option>
+          <option id="345" value="PVR"></option>
+          <option id="346" value="PAGEIND"></option>
+          <option id="347" value="PATANJALI"></option>
+          <option id="348" value="PERSISTENT"></option>
+          <option id="349" value="PETRONET"></option>
+          <option id="350" value="PFIZER"></option>
+          <option id="351" value="PHOENIXLTD"></option>
+          <option id="352" value="PIDILITIND"></option>
+          <option id="353" value="POLYMED"></option>
+          <option id="354" value="POLYCAB"></option>
+          <option id="355" value="POLYPLEX"></option>
+          <option id="356" value="POONAWALLA"></option>
+          <option id="357" value="PFC"></option>
+          <option id="358" value="POWERGRID"></option>
+          <option id="359" value="PRAJIND"></option>
+          <option id="360" value="PRESTIGE"></option>
+          <option id="361" value="PRINCEPIPE"></option>
+          <option id="362" value="PRSMJOHNSN"></option>
+          <option id="363" value="PRIVISCL"></option>
+          <option id="364" value="PGHL"></option>
+          <option id="365" value="PGHH"></option>
+          <option id="366" value="PNB"></option>
+          <option id="367" value="QUESS"></option>
+          <option id="368" value="RBLBANK"></option>
+          <option id="369" value="RECLTD"></option>
+          <option id="370" value="RHIM"></option>
+          <option id="371" value="RITES"></option>
+          <option id="372" value="RADICO"></option>
+          <option id="373" value="RVNL"></option>
+          <option id="374" value="RAIN"></option>
+          <option id="375" value="RAJESHEXPO"></option>
+          <option id="376" value="RALLIS"></option>
+          <option id="377" value="RCF"></option>
+          <option id="378" value="RATNAMANI"></option>
+          <option id="379" value="RTNINDIA"></option>
+          <option id="380" value="RAYMOND"></option>
+          <option id="381" value="REDINGTON"></option>
+          <option id="382" value="RELAXO"></option>
+          <option id="383" value="RELIANCE"></option>
+          <option id="384" value="RBA"></option>
+          <option id="385" value="ROSSARI"></option>
+          <option id="386" value="ROUTE"></option>
+          <option id="387" value="SBICARD"></option>
+          <option id="388" value="SBILIFE"></option>
+          <option id="389" value="SIS"></option>
+          <option id="390" value="SJVN"></option>
+          <option id="391" value="SKFINDIA"></option>
+          <option id="392" value="SRF"></option>
+          <option id="393" value="MOTHERSON"></option>
+          <option id="394" value="SANOFI"></option>
+          <option id="395" value="SAPPHIRE"></option>
+          <option id="396" value="SAREGAMA"></option>
+          <option id="397" value="SCHAEFFLER"></option>
+          <option id="398" value="SHARDACROP"></option>
+          <option id="399" value="SFL"></option>
+          <option id="400" value="SHILPAMED"></option>
+          <option id="401" value="SCI"></option>
+          <option id="402" value="SHOPERSTOP"></option>
+          <option id="403" value="SHREECEM"></option>
+          <option id="404" value="RENUKA"></option>
+          <option id="405" value="SRTRANSFIN"></option>
+          <option id="406" value="SHYAMMETL"></option>
+          <option id="407" value="SIEMENS"></option>
+          <option id="408" value="SOBHA"></option>
+          <option id="409" value="SOLARINDS"></option>
+          <option id="410" value="SONACOMS"></option>
+          <option id="411" value="SONATSOFTW"></option>
+          <option id="412" value="STARHEALTH"></option>
+          <option id="413" value="SBIN"></option>
+          <option id="414" value="SAIL"></option>
+          <option id="415" value="SWSOLAR"></option>
+          <option id="416" value="STLTECH"></option>
+          <option id="417" value="SUDARSCHEM"></option>
+          <option id="418" value="SUMICHEM"></option>
+          <option id="419" value="SPARC"></option>
+          <option id="420" value="SUNPHARMA"></option>
+          <option id="421" value="SUNTV"></option>
+          <option id="422" value="SUNDARMFIN"></option>
+          <option id="423" value="SUNDRMFAST"></option>
+          <option id="424" value="SUNTECK"></option>
+          <option id="425" value="SUPRAJIT"></option>
+          <option id="426" value="SUPREMEIND"></option>
+          <option id="427" value="SUVENPHAR"></option>
+          <option id="428" value="SUZLON"></option>
+          <option id="429" value="SWANENERGY"></option>
+          <option id="430" value="SYMPHONY"></option>
+          <option id="431" value="SYNGENE"></option>
+          <option id="432" value="TCIEXP"></option>
+          <option id="433" value="TCNSBRANDS"></option>
+          <option id="434" value="TTKPRESTIG"></option>
+          <option id="435" value="TV18BRDCST"></option>
+          <option id="436" value="TVSMOTOR"></option>
+          <option id="437" value="TANLA"></option>
+          <option id="438" value="TATACHEM"></option>
+          <option id="439" value="TATACOFFEE"></option>
+          <option id="440" value="TATACOMM"></option>
+          <option id="441" value="TCS"></option>
+          <option id="442" value="TATACONSUM"></option>
+          <option id="443" value="TATAELXSI"></option>
+          <option id="444" value="TATAINVEST"></option>
+          <option id="445" value="TATAMTRDVR"></option>
+          <option id="446" value="TATAMOTORS"></option>
+          <option id="447" value="TATAPOWER"></option>
+          <option id="448" value="TATASTEEL"></option>
+          <option id="449" value="TTML"></option>
+          <option id="450" value="TEAMLEASE"></option>
+          <option id="451" value="TECHM"></option>
+          <option id="452" value="TEJASNET"></option>
+          <option id="453" value="NIACL"></option>
+          <option id="454" value="RAMCOCEM"></option>
+          <option id="455" value="THERMAX"></option>
+          <option id="456" value="THYROCARE"></option>
+          <option id="457" value="TIMKEN"></option>
+          <option id="458" value="TITAN"></option>
+          <option id="459" value="TORNTPHARM"></option>
+          <option id="460" value="TORNTPOWER"></option>
+          <option id="461" value="TCI"></option>
+          <option id="462" value="TRENT"></option>
+          <option id="463" value="TRIDENT"></option>
+          <option id="464" value="TRIVENI"></option>
+          <option id="465" value="TRITURBINE"></option>
+          <option id="466" value="TIINDIA"></option>
+          <option id="467" value="UFLEX"></option>
+          <option id="468" value="UNOMINDA"></option>
+          <option id="469" value="UPL"></option>
+          <option id="470" value="UTIAMC"></option>
+          <option id="471" value="ULTRACEMCO"></option>
+          <option id="472" value="UNIONBANK"></option>
+          <option id="473" value="UBL"></option>
+          <option id="474" value="MCDOWELL-N"></option>
+          <option id="475" value="VGUARD"></option>
+          <option id="476" value="VMART"></option>
+          <option id="477" value="VIPIND"></option>
+          <option id="478" value="VAIBHAVGBL"></option>
+          <option id="479" value="VTL"></option>
+          <option id="480" value="VARROC"></option>
+          <option id="481" value="VBL"></option>
+          <option id="482" value="MANYAVAR"></option>
+          <option id="483" value="VEDL"></option>
+          <option id="484" value="VIJAYA"></option>
+          <option id="485" value="VINATIORGA"></option>
+          <option id="486" value="IDEA"></option>
+          <option id="487" value="VOLTAS"></option>
+          <option id="488" value="WELCORP"></option>
+          <option id="489" value="WELSPUNIND"></option>
+          <option id="490" value="WESTLIFE"></option>
+          <option id="491" value="WHIRLPOOL"></option>
+          <option id="492" value="WIPRO"></option>
+          <option id="493" value="WOCKPHARMA"></option>
+          <option id="494" value="YESBANK"></option>
+          <option id="495" value="ZFCVINDIA"></option>
+          <option id="496" value="ZEEL"></option>
+          <option id="497" value="ZENSARTECH"></option>
+          <option id="498" value="ZOMATO"></option>
+          <option id="499" value="ZYDUSLIFE"></option>
+          <option id="500" value="ZYDUSWELL"></option>
+          <option id="501" value="ECLERX"></option>
       </datalist>
       <button class="btn btn-outline-success stocksearchbtn" type="submit" id="getDataBtn">Search</button>
     </form>
@@ -773,33 +774,33 @@
             <i class="fa fa-spin fa-sync-alt fa-2x"></i>
           </div>
           <p class="card-text">
-            <div class="alert" style="width: 110%;">
-              <div class="alert alert-danger" style="width: 100%;">No Data Found</div>
-            </div>
-            <div class="data">
-              <label for="">Last Refreshed :</label>
-              <span id="date"></span>
-            </div>
-            <div class="data">
-              <label for="">Open :</label>
-              <span id="open"></span>
-            </div>
-            <div class="data">
-              <label for="">High :</label>
-              <span id="high"></span>
-            </div>
-            <div class="data">
-              <label for="">Low :</label>
-              <span id="low"></span>
-            </div>
-            <div class="data">
-              <label for="">Close :</label>
-              <span id="close"></span>
-            </div>
-            <div class="data">
-              <label for="">Volume :</label>
-              <span id="volume"></span>
-            </div>
+          <div class="alert" style="width: 110%;">
+            <div class="alert alert-danger" style="width: 100%;">No Data Found</div>
+          </div>
+          <div class="data">
+            <label for="">Last Refreshed :</label>
+            <span id="date"></span>
+          </div>
+          <div class="data">
+            <label for="">Open :</label>
+            <span id="open"></span>
+          </div>
+          <div class="data">
+            <label for="">High :</label>
+            <span id="high"></span>
+          </div>
+          <div class="data">
+            <label for="">Low :</label>
+            <span id="low"></span>
+          </div>
+          <div class="data">
+            <label for="">Close :</label>
+            <span id="close"></span>
+          </div>
+          <div class="data">
+            <label for="">Volume :</label>
+            <span id="volume"></span>
+          </div>
           </p>
           <a href="#" class="btn btn-primary" id="goBtn" target="_blank">Check this Stock</a>
         </div>
@@ -820,7 +821,7 @@
   <footer>
     <div class="footer">
       <div class="footimgdiv">
-        <img src="skyinvestments-logo.jpg" id="footimg" alt="">
+        <img src="../Media/Logos & Favicons/skyinvestments-logo.jpg" id="footimg" alt="">
         <p class="footpara"> © Aakash Investments . Since 2017 .</p>
       </div>
       <div class="socialicons">
@@ -938,8 +939,8 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  <script src="index.js"></script>
-  <script src="stocks.js"></script>
+  <script src="../Javscripts/index.js"></script>
+  <script src="../Javscripts/stocks.js"></script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwzRNSAHBYJkvJtKf-JWRHD3i897nV_5NAyS93y1xSsVHmSeh8yhU8L1ACIu89nypOHng/exec'
     const form = document.forms['google-sheets']

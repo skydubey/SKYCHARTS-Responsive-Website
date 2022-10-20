@@ -1,23 +1,33 @@
 $('#loader').addClass('d-none');
 $('.alert').addClass('d-none');
 let searchVal = document.getElementById('inputsearch');
-let google = `https://www.google.com/finance/quote/ECLERX:NSE?sa=X&ved=2ahUKEwipzdGMluz6AhXktGMGHWFMAXIQ3ecFegQIJRAY`
+
 $(document).ready(function () {
 
-    $('#getDataBtn').on('click', function () {
+    $('#getDataBtn').on('click', getData);
 
+});
 
+function getData() {
+    $.ajax({
 
-        $.ajax({
+        url: `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${searchVal.value}.BSE&outputsize=full&apikey=DEMO`, // API URL
+        type: 'GET', // GET OR POST
 
-            url: `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${searchVal.value}.BSE&outputsize=full&apikey=OT7RL8UB4YVGID5U`, // API URL
-            type: 'GET', // GET OR POST
+        beforeSend: function (response, status) {
+            // THIS FUNCTION CALL BEFORE AJAX API HITS
+            // HERE WE CAN SHOW OUR LOADER.
+            $('#loader').removeClass('d-none');
+            $('.data').addClass('d-none');
+        },
 
-            beforeSend: function (response, status) {
-                // THIS FUNCTION CALL BEFORE AJAX API HITS
-                // HERE WE CAN SHOW OUR LOADER.
+        success: function (response, status, error, data) {
+            // ONCE OUR API CALL SEND SUCCESS
+            // THIS FUNCTION GETS CALLED.
 
-
+            if (response['Error Message']) {
+                $('.alert').removeClass('d-none');
+                $('#loader').addClass('d-none');
                 $('#date').text("");
                 $('#symbolname').text("");
                 $('#open').text("");
@@ -25,23 +35,9 @@ $(document).ready(function () {
                 $('#low').text("");
                 $('#close').text("");
                 $('#volume').text("");
-                $('.alert').removeClass('d-none');
-                $('#loader').removeClass('d-none');
-                $('.data').addClass('d-none');
-            },
-            
-            success: function (response, status) {
-                // ONCE OUR API CALL SEND SUCCESS
-                // THIS FUNCTION GETS CALLED.
-                
-                
-                
-                $('#loader').addClass('d-none');
-                $('.data').removeClass('d-none');
-
-
+            }
+            else {
                 let latestdate = response['Meta Data']['3. Last Refreshed'];
-                // let data = response['Meta Data'][]
                 let symbolname = response['Meta Data']['2. Symbol'];
                 let open = response['Time Series (Daily)'][latestdate]['1. open'];
                 let high = response['Time Series (Daily)'][latestdate]['2. high'];
@@ -49,6 +45,8 @@ $(document).ready(function () {
                 let close = response['Time Series (Daily)'][latestdate]['4. close'];
                 let volume = response['Time Series (Daily)'][latestdate]['5. volume'];
 
+                $('#loader').addClass('d-none');
+                $('.data').removeClass('d-none');
                 $('#date').text(latestdate);
                 $('#symbolname').text(symbolname);
                 $('#open').text(open);
@@ -59,22 +57,17 @@ $(document).ready(function () {
                 $('.alert').addClass('d-none');
                 $('#loader').addClass('d-none');
 
-                $('#goBtn').on('click',function(){
-                    // window.location.href = ;
-
-                    window.open(`https://www.google.com/finance/quote/${searchVal.value}:NSE?sa=X&ved=2ahUKEwipzdGMluz6AhXktGMGHWFMAXIQ3ecFegQIJRAY`,`_blank`);
+                $('#goBtn').on('click', function () {
+                    window.open(`https://www.google.com/finance/quote/${searchVal.value}:NSE?sa=X&ved=2ahUKEwipzdGMluz6AhXktGMGHWFMAXIQ3ecFegQIJRAY`, `_blank`);
                 })
-                
-                
-
-            },
-            error: function (error, status) {
-
             }
-        })
+        },
 
+        error: function (error, status) {
+
+        }
     })
+}
 
-});
 
 
