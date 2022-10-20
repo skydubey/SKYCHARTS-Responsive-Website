@@ -93,3 +93,7 @@
     margin: 10px;
     border: 2px solid rgba(26, 115, 232, 0.88);
 }
+
+.container{
+    width: 95%;
+}
