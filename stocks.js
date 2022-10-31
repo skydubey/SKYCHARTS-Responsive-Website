@@ -15,15 +15,6 @@ datepicker.addEventListener('input', function (e) {
     }
 });
 
-// function getdate(){
-
-//     // let datevalue = $('#datepicker').value;
-//     console.log(datevalue);
-
-//     return datevalue;
-
-// }
-
 
 $(document).ready(function () {
 
@@ -44,6 +35,7 @@ function getData() {
         beforeSend: function (response, status) {
             // THIS FUNCTION CALL BEFORE AJAX API HITS
             // HERE WE CAN SHOW OUR LOADER.
+            $('#alertweekend').addClass('d-none');
             $('#loader').removeClass('d-none');
             $('.data').addClass('d-none');
 
