@@ -1,5 +1,5 @@
 $('#loader').addClass('d-none');
-$('.alert').addClass('d-none');
+$('#alertcard').addClass('d-none');
 let searchVal = document.getElementById('inputsearch');
 let datepicker = document.getElementById('datepicker');
 
@@ -8,7 +8,9 @@ datepicker.addEventListener('input', function (e) {
     if ([6, 0].includes(day)) {
         e.preventDefault();
         this.value = '';
-        alert('Markets are closed at Weekends');
+        // alert('Markets are closed at Weekends');
+        $('alertweekend').removeClass('d-none');
+        
     }
 });
 
@@ -34,7 +36,7 @@ function getData() {
 
     $.ajax({
 
-
+        
         url: `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${searchVal.value}.BSE&outputsize=full&apikey=OT7RL8UB4YVGID5U`, // API URL
         type: 'GET', // GET OR POST
 
@@ -52,7 +54,8 @@ function getData() {
             let datevalue = document.getElementById('datepicker').value;
 
             if (response['Error Message']) {
-                $('.alert').removeClass('d-none');
+                $('alertweekend').addClass('d-none');
+                $('#alertcard').removeClass('d-none');
                 $('#loader').addClass('d-none');
                 $('#date').text("");
                 $('#symbolname').text("");
@@ -75,6 +78,7 @@ function getData() {
                 let close = response['Time Series (Daily)'][latestdate]['4. close'];
                 let volume = response['Time Series (Daily)'][latestdate]['5. volume'];
 
+                $('alertweekend').addClass('d-none');
                 $('#loader').addClass('d-none');
                 $('.data').removeClass('d-none');
                 $('#date').text(latestdate);
@@ -85,7 +89,7 @@ function getData() {
                 $('#close').text(close);
                 $('#volume').text(volume / 1000 + "k");
                 document.getElementById('datepicker').value = "";
-                $('.alert').addClass('d-none');
+                $('#alertcard').addClass('d-none');
                 $('#loader').addClass('d-none');
 
 
@@ -108,7 +112,7 @@ function getData() {
                 let close = response['Time Series (Daily)'][datevalue]['4. close'];
                 let volume = response['Time Series (Daily)'][datevalue]['5. volume'];
 
-
+                $('alertweekend').addClass('d-none');
                 $('#loader').addClass('d-none');
                 $('.data').removeClass('d-none');
                 $('#date').text(datevalue);
@@ -119,7 +123,7 @@ function getData() {
                 $('#close').text(close);
                 $('#volume').text(volume / 1000 + "k");
                 document.getElementById('datepicker').value = "";
-                $('.alert').addClass('d-none');
+                $('#alertcard').addClass('d-none');
                 $('#loader').addClass('d-none');
 
                 $('#goBtn').on('click', function () {
