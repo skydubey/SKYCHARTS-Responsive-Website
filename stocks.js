@@ -53,7 +53,7 @@ function getData() {
                 $('#high').text(high);
                 $('#low').text(low);
                 $('#close').text(close);
-                $('#volume').text(volume + "k");
+                $('#volume').text(volume/1000 + "k");
                 $('.alert').addClass('d-none');
                 $('#loader').addClass('d-none');
 
