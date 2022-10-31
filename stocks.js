@@ -71,6 +71,8 @@ function getData() {
                 let close = response['Time Series (Daily)'][latestdate]['4. close'];
                 let volume = response['Time Series (Daily)'][latestdate]['5. volume'];
 
+                $('#loader').addClass('d-none');
+                $('#alertcard').addClass('d-none');
                 $('#alertweekend').addClass('d-none');
                 $('#loader').addClass('d-none');
                 $('.data').removeClass('d-none');
@@ -82,8 +84,7 @@ function getData() {
                 $('#close').text(close);
                 $('#volume').text(volume / 1000 + "k");
                 document.getElementById('datepicker').value = "";
-                $('#alertcard').addClass('d-none');
-                $('#loader').addClass('d-none');
+                
 
 
 
@@ -107,6 +108,7 @@ function getData() {
 
                 $('#alertweekend').addClass('d-none');
                 $('#loader').addClass('d-none');
+                $('#alertcard').addClass('d-none');
                 $('.data').removeClass('d-none');
                 $('#date').text(datevalue);
                 $('#symbolname').text(symbolname);
@@ -116,8 +118,8 @@ function getData() {
                 $('#close').text(close);
                 $('#volume').text(volume / 1000 + "k");
                 document.getElementById('datepicker').value = "";
-                $('#alertcard').addClass('d-none');
-                $('#loader').addClass('d-none');
+                
+    
 
                 $('#goBtn').on('click', function () {
                     window.open(`https://www.google.com/finance/quote/${searchVal.value}:NSE?sa=X&ved=2ahUKEwipzdGMluz6AhXktGMGHWFMAXIQ3ecFegQIJRAY`, `_blank`);
