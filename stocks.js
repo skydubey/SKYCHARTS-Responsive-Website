@@ -9,7 +9,7 @@ datepicker.addEventListener('input', function (e) {
         e.preventDefault();
         this.value = '';
         // alert('Markets are closed at Weekends');
-        $('alertweekend').removeClass('d-none');
+        $('#alertweekend').removeClass('d-none');
         // $('alertweekend').removeClass('d-none');
         
     }
@@ -55,7 +55,7 @@ function getData() {
             let datevalue = document.getElementById('datepicker').value;
 
             if (response['Error Message']) {
-                $('alertweekend').addClass('d-none');
+                $('#alertweekend').addClass('d-none');
                 $('#alertcard').removeClass('d-none');
                 $('#loader').addClass('d-none');
                 $('#date').text("");
@@ -79,7 +79,7 @@ function getData() {
                 let close = response['Time Series (Daily)'][latestdate]['4. close'];
                 let volume = response['Time Series (Daily)'][latestdate]['5. volume'];
 
-                $('alertweekend').addClass('d-none');
+                $('#alertweekend').addClass('d-none');
                 $('#loader').addClass('d-none');
                 $('.data').removeClass('d-none');
                 $('#date').text(latestdate);
@@ -113,7 +113,7 @@ function getData() {
                 let close = response['Time Series (Daily)'][datevalue]['4. close'];
                 let volume = response['Time Series (Daily)'][datevalue]['5. volume'];
 
-                $('alertweekend').addClass('d-none');
+                $('#alertweekend').addClass('d-none');
                 $('#loader').addClass('d-none');
                 $('.data').removeClass('d-none');
                 $('#date').text(datevalue);
