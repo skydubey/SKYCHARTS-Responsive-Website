@@ -10,6 +10,7 @@ datepicker.addEventListener('input', function (e) {
         this.value = '';
         // alert('Markets are closed at Weekends');
         $('alertweekend').removeClass('d-none');
+        // $('alertweekend').removeClass('d-none');
         
     }
 });
