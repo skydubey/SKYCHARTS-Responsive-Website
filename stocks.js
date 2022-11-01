@@ -75,7 +75,7 @@ function getData() {
                 $('#alertcard').removeClass('d-none');
                 $('#loader').addClass('d-none');
                 $('#date').text("");
-                $('#symbolname').text("");
+                // $('#symbolname').text("");
                 $('#open').text("");
                 $('#high').text("");
                 $('#low').text("");
@@ -99,7 +99,7 @@ function getData() {
                 $('#loader').addClass('d-none');
                 $('.data').removeClass('d-none');
                 $('#date').text(latestdate);
-                $('#symbolname').text(symbolname);
+                // $('#symbolname').text(symbolname);
                 $('#open').text(open);
                 $('#high').text(high);
                 $('#low').text(low);
