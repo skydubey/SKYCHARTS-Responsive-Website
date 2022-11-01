@@ -110,3 +110,13 @@
     margin-top: 3px;
     border-radius: 25px;
 }
+
+
+/* For Chart Section */
+
+.chartController{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 8rem;
+}

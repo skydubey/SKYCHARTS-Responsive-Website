@@ -810,8 +810,15 @@
         </div>
       </div>
 
-
+      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
     </div>
+  </div>
+  <div class="chartController">
+    <button type="button" class="btn btn-primary mx-2 my-2" id="daily">DAILY - 10 DAYS</button>
+    <button type="button" class="btn btn-primary mx-2 my-2" id="weekly">WEEKLY - 3 MONTHS</button>
+    <button type="button" class="btn btn-primary mx-2 my-2" id="monthly">MONTHLY - 1 YEAR</button>
+    <button type="button" class="btn btn-primary mx-2 my-2" id="yearly">YEARLY - MAX</button>
+    <!-- <button type="button" class="btn btn-primary mx-2">MAX DATA</button> -->
   </div>
 
 
@@ -945,6 +952,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   <script src="index.js"></script>
   <script src="stocks.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwzRNSAHBYJkvJtKf-JWRHD3i897nV_5NAyS93y1xSsVHmSeh8yhU8L1ACIu89nypOHng/exec'
     const form = document.forms['google-sheets']
