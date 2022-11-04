@@ -37,6 +37,10 @@ function scrolling() {
     window.scrollTo(0, 360);
 }
 
+document.getElementById("clicktofocus").addEventListener("click", () => {
+    document.getElementById("inputsearch").focus();
+});
+
 
 
 function getData() {
@@ -1798,7 +1802,7 @@ function getData() {
             else {
 
                 $('#containerScrip').removeClass('d-none');
-                
+
 
                 let latestdate = response['Meta Data']['3. Last Refreshed'];
                 let symbolname = response['Meta Data']['2. Symbol'];
