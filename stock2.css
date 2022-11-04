@@ -76,7 +76,7 @@ small {
 
 #mainContent_pricesummary {
     background: url(homebg.png);
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: no-repeat;
 
 }
