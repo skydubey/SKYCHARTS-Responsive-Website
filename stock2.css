@@ -1,0 +1,232 @@
+.containerScrip {
+    margin-top: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 15rem;
+}
+
+
+.cardscreen {
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    min-height: 10rem;
+    /* box-shadow: 2px 2px 4px rgb(21 92 171 / 10%); */
+    /* box-shadow: 0.125rem 0.125rem 0.75rem rgb(79 145 247 / 10%); */
+    box-shadow: rgb(21 92 171 / 16%) 0px 1px 4px;
+    /* box-shadow: rgb(21 92 171 / 15%) 0px 2px 5px 0px, rgb(0 0 0 / 5%) 0px 1px 1px 0px; */
+    padding: 2rem;
+    border-radius: 100px;
+    /* margin-top: 2rem; */
+}
+
+.mt-3,
+.my-3 {
+    margin-top: 1rem !important;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 3rem;
+}
+
+.scripdetails {
+    margin-bottom: 20px;
+}
+
+.scripspan {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.pricespan {
+    font-size: 50px;
+    font-weight: bold;
+    /* margin-top: 100px; */
+    margin-left: 13rem;
+    margin-right: 10px;
+}
+#rupeechange,#percentchange{
+    margin: 10px;
+}
+
+.Number {
+    font-size: 30px;
+}
+
+
+small {
+    font-size: large;
+    font-weight: 600;
+}
+
+/* .containerScrip{
+    background: url(homebg.png);
+} */
+
+#mainContent_pricesummary {
+    background: url(homebg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+/* .stocksearch{
+        margin-top: 10rem;
+      } */
+
+body {
+    background: url(homebg.png);
+    background-size: 100vw;
+    /* height: 100vw; */
+    /* width: 100vw; */
+    min-height: 100vh;
+    /* background-color: #FFF !important; */
+    /* background-image: url(../images/homebg.png); */
+    background-position: center top;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+.stocksearchinput {
+    padding: 20px 40px;
+    border-radius: 100px;
+    box-shadow: 0 5px 30px rgb(0 120 255 / 20%);
+    font-weight: bold;
+    outline: 0px;
+    border: none;
+    color: lightgray;
+    font-size: 25px;
+}
+
+.stockheading {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.8rem;
+    width: 100%;
+    color: #494949;
+    color: black;
+}
+
+.stockp {
+    margin: 1rem 0rem;
+    color: rgba(26, 115, 232, 0.88);
+    font-size: 25px;
+    text-align: center;
+    /* color: rgb(255, 80, 0); */
+}
+
+/* footer {
+        position: absolute;
+        bottom: 5px;
+    } */
+
+#entersearch{
+    text-decoration: none;
+    box-shadow: 0 5px 30px rgb(0 120 255 / 20%);
+    background-color: rgba(26, 115, 232, 0.88);
+    color: white;
+    font-size: 23px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    margin-top: 6px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.datediv{
+    display: flex;
+    flex-direction: row;
+}
+
+#getbtn{
+    border-radius: 30px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 20px;
+    /* font-style: italic; */
+}
+
+.chartcontainer{
+    display: flex;
+    margin: 2rem 4rem;
+    
+}
+
+#searchspinner {
+    margin: 80px;
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: -0.125em;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: .75s linear infinite spinner-border;
+    animation: .75s linear infinite spinner-border;
+}
+
+#launchchart{
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 8px;
+    font-size: 30px;
+    
+}
+.nsebtn{
+    /* margin-left: 35rem; */
+    margin-top: 1rem;
+    margin-left: 32rem;
+    /* display: flex;
+    justify-content: end; */
+}
+
+
+.launchdiv{
+    display: block;
+    margin: auto;
+}
+
+.positive{
+    color: #137333;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    background: #e6f4ea;
+}
+
+.negative{
+    color: #a50e0e;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    background: #fce8e6;
+}
+
+.neutral{
+    color: #3c4043;
+    background: #e8eaed;
+}
+
+#symbolname{
+    text-transform: uppercase;
+}
+
+
+
+
