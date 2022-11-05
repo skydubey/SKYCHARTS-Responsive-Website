@@ -59,6 +59,18 @@ function getData() {
 
             $('#loader').removeClass('d-none');
             $('#getdataloader').removeClass('d-none');
+
+            $('#percentchange').text("");
+            $('#rupeechange').text("");
+            $('#date').text("");
+            $('#date').text("");
+            $('#symbolname').text("");
+            $('#open').text("");
+            $('#high').text("");
+            $('#low').text("");
+            $('#close').text("");
+            $('#volume').text("");
+
         },
 
         success: function (response, status, error, data) {
@@ -84,8 +96,11 @@ function getData() {
                     confirmButtonText: 'Okay'
                 })
 
+                $('#percentchange').text("");
+                $('#rupeechange').text("");
                 $('#date').text("");
-                // $('#symbolname').text("");
+                $('#date').text("");
+                $('#symbolname').text("");
                 $('#open').text("");
                 $('#high').text("");
                 $('#low').text("");
@@ -119,6 +134,16 @@ function getData() {
 
 
                 if (Math.sign(changeinrupee) == -1) {
+
+                    $('#rupeechange').removeClass('neutral');
+                    $('#ltp').removeClass('neutral');
+                    $('#percentchange').removeClass('neutral');
+
+                    $('#rupeechange').removeClass('positive');
+                    $('#ltp').removeClass('positive');
+                    $('#percentchange').removeClass('positive');
+                   
+
                     $('#rupeechange').addClass('negative');
                     $('#ltp').addClass('negative');
                     $('#percentchange').addClass('negative');
@@ -126,9 +151,15 @@ function getData() {
                     $('#percentchange').text(parseFloat(changeinper).toFixed(2) + "%");
                 }
                 else if (Math.sign(changeinrupee) == 1) {
+                    
+                    $('#rupeechange').removeClass('neutral');
+                    $('#ltp').removeClass('neutral');
+                    $('#percentchange').removeClass('neutral');
+
                     $('#rupeechange').removeClass('negative');
                     $('#ltp').removeClass('negative');
                     $('#percentchange').removeClass('negative');
+
                     $('#rupeechange').addClass('positive');
                     $('#ltp').addClass('positive');
                     $('#percentchange').addClass('positive');
@@ -143,15 +174,14 @@ function getData() {
                     $('#rupeechange').removeClass('negative');
                     $('#ltp').removeClass('negative');
                     $('#percentchange').removeClass('negative');
+
                     $('#rupeechange').removeClass('positive');
                     $('#ltp').removeClass('positive');
                     $('#percentchange').removeClass('positive');
 
                     // Adding Classes 
 
-                    $('#rupeechange').addClass('neutral');
-                    $('#ltp').addClass('neutral');
-                    $('#percentchange').addClass('neutral');
+                    
                     $('#rupeechange').addClass('neutral');
                     $('#ltp').addClass('neutral');
                     $('#percentchange').addClass('neutral');
