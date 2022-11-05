@@ -186,6 +186,9 @@ function getData() {
                     $('#ltp').addClass('neutral');
                     $('#percentchange').addClass('neutral');
 
+                    $('#rupeechange').text(parseFloat(changeinrupee).toFixed(2));
+                    $('#percentchange').text(parseFloat(changeinper).toFixed(2) + "%");
+
                 }
 
 
