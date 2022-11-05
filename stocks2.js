@@ -96,6 +96,10 @@ function getData() {
                     confirmButtonText: 'Okay'
                 })
 
+                $('#datequery').text("");
+                $('#prevclose').text("");
+                $('#ltp').text("");
+                $('#lastupdated').text("");
                 $('#date').text("");
                 $('#date').text("");
                 $('#symbolname').text("");
