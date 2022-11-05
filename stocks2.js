@@ -96,8 +96,6 @@ function getData() {
                     confirmButtonText: 'Okay'
                 })
 
-                // $('#percentchange').text("");
-                // $('#rupeechange').text("");
                 $('#date').text("");
                 $('#date').text("");
                 $('#symbolname').text("");
