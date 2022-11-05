@@ -270,7 +270,7 @@
             પહેલવાન છે </p>
         <form class="d-flex stocksearch" onsubmit="return false">
             <input class="form-control stocksearchinput" list="datalistOptions" autocomplete="off" type="text"
-                placeholder="Type a Stock Name" aria-label="Search" id="inputsearch">
+                placeholder="Type a Stock Name" aria-label="Search" id="inputsearch" onchange="return getData()">
 
             <a class="linktodata" href="#nothing" onclick="scrolling()"><button type="button" class="btn btn-primary" id="entersearch"
                     onclick="getData()">Search</button></a>
