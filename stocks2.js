@@ -187,13 +187,6 @@ function getData() {
                     $('#percentchange').addClass('neutral');
 
                 }
-                // else{
-                //     $('#rupeechange').text(parseFloat(changeinrupee).toFixed(2));
-                //     $('#percentchange').text("+"+parseFloat(changeinper).toFixed(2) + "%");
-                // }
-
-
-
 
 
                 // HIDING ALL LOADING SPINNERS 
@@ -203,6 +196,8 @@ function getData() {
 
                 // DATA INPUT IN HTML 
 
+                $('#percentchange').text(changeinper);
+                $('#rupeechange').text(changeinrupee);
                 $('#lastupdated').text(latestdate);
                 $('#datequery').text(latestdate);
                 $('#symbolname').text(symbolname);
