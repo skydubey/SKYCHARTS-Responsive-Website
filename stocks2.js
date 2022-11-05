@@ -196,8 +196,7 @@ function getData() {
 
                 // DATA INPUT IN HTML 
 
-                $('#percentchange').text(changeinper);
-                $('#rupeechange').text(changeinrupee);
+               
                 $('#lastupdated').text(latestdate);
                 $('#datequery').text(latestdate);
                 $('#symbolname').text(symbolname);
