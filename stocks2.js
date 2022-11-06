@@ -120,7 +120,7 @@ function getData() {
                 let high = response['Time Series (Daily)'][latestdate]['2. high'];
                 let low = response['Time Series (Daily)'][latestdate]['3. low'];
                 let close = response['Time Series (Daily)'][latestdate]['4. close'];
-                let volume = response['Time Series (Daily)'][latestdate]['5. volume'];
+                let volume = response['Time Series (Daily)'][latestdate]['6. volume'];
 
                 // let latestdateonpage = Object.keys(dates)[0];
                 let onedaybefdate = Object.keys(dates)[1];
