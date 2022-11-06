@@ -1876,7 +1876,7 @@ function getData() {
                 $('#open').text(parseFloat(open).toFixed(2));
                 $('#high').text(parseFloat(high).toFixed(2));
                 $('#low').text(parseFloat(low).toFixed(2));
-                $('#ltp').text(parseFloat(close).toFixed(2));
+                // $('#ltp').text(parseFloat(close).toFixed(2));
                 $('#close').text(parseFloat(close).toFixed(2));
                 $('#prevclose').text(parseFloat(onedaybefclosing).toFixed(2));
                 $('#volume').text(volume / 1000 + "k");
