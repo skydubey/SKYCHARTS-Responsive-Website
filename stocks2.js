@@ -48,7 +48,7 @@ function getData() {
     $.ajax({
 
 
-        url: `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${searchVal.value}.BSE&outputsize=full&apikey=OT7RL8UB4YVGID5U`, // API URL
+        url: `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=shantigear.BSE&outputsize=full&apikey=OT7RL8UB4YVGID5U`, // API URL
         type: 'GET', // GET OR POST
 
         beforeSend: function (response, status) {
