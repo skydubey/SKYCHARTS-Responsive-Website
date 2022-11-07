@@ -48,9 +48,7 @@ document.getElementById("clicktofocus").addEventListener("click", () => {
 });
 
 document.getElementById("getbtn").addEventListener("click", () => {
-    document.getElementById("fakebtn").addEventListener("click", () => {
-        document.getElementById("searchspinner").addClass(d-none);
-    });
+    window.scrollTo(0, 479);
 });
 
 
