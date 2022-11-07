@@ -19,10 +19,18 @@ datepicker.addEventListener('input', function (e) {
         })
     }
 });
+
 $('#launchchart').on('click', function () {
     $('#chartcontainer').removeClass('d-none');
     $('#daily').click();
 })
+
+
+document.getElementById("getbtn").addEventListener("click", () => {
+    document.getElementById("fakebtn").addEventListener("click", () => {
+        document.getElementById("loader").addClass(d-none);
+    });
+});
 
 // function sweetloading(){
 //     setTimeout(function() {
