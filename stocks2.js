@@ -41,16 +41,17 @@ function scrolling() {
     window.scrollTo(0, 479);
 }
 
-document.getElementById("getbtn").addEventListener("click", () => {
-    document.getElementById("fakebtn").addEventListener("click", () => {
-        document.getElementById("loader").addClass(d-none);
-    });
-});
+
 
 document.getElementById("clicktofocus").addEventListener("click", () => {
     document.getElementById("inputsearch").focus();
 });
 
+document.getElementById("getbtn").addEventListener("click", () => {
+    document.getElementById("fakebtn").addEventListener("click", () => {
+        document.getElementById("loader").addClass(d-none);
+    });
+});
 
 
 
