@@ -47,10 +47,6 @@ document.getElementById("clicktofocus").addEventListener("click", () => {
     document.getElementById("inputsearch").focus();
 });
 
-document.getElementById("getbtn").addEventListener("click", () => {
-    window.scrollTo(0, 795);
-});
-
 
 
 
