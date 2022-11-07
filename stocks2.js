@@ -1908,4 +1908,10 @@ function getData() {
     })
 }
 
+document.getElementById("getbtn").addEventListener("click", () => {
+    document.getElementById("fakebtn").addEventListener("click", () => {
+        document.getElementById("loader").addClass(d-none);
+    });
+});
+
 
