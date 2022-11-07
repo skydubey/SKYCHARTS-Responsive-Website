@@ -94,6 +94,7 @@ function getData() {
                     text: 'No Data Found',
                     icon: 'error',
                     confirmButtonText: 'Okay'
+                    
                 })
 
                 $('#datequery').text("");
@@ -108,6 +109,8 @@ function getData() {
                 $('#low').text("");
                 $('#close').text("");
                 $('#volume').text("");
+                window.scrollTo(0, 0);
+                $('#clicktofocus').click();
 
             }
 
