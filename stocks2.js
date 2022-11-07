@@ -112,6 +112,7 @@ function getData() {
                 $('#inputsearch').value("");
 
                 window.scrollTo(0, 0);
+                document.getElementById("inputsearch").focus();
                 // $('#clicktofocus').click();
 
             }
