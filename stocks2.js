@@ -48,7 +48,7 @@ document.getElementById("clicktofocus").addEventListener("click", () => {
 });
 
 document.getElementById("getbtn").addEventListener("click", () => {
-    window.scrollTo(0, 524);
+    window.scrollTo(0, 804);
 });
 
 
