@@ -109,10 +109,10 @@ function getData() {
                 $('#low').text("");
                 $('#close').text("");
                 $('#volume').text("");
-                $('#inputsearch').text("");
+                $('#inputsearch').value("");
 
                 window.scrollTo(0, 0);
-                $('#clicktofocus').click();
+                // $('#clicktofocus').click();
 
             }
 
