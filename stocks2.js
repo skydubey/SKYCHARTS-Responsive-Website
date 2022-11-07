@@ -34,7 +34,7 @@ $('#launchchart').on('click', function () {
 // }
 
 function scrolling() {
-    window.scrollTo(0, 360);
+    window.scrollTo(0, 479);
 }
 
 document.getElementById("clicktofocus").addEventListener("click", () => {

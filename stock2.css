@@ -88,15 +88,9 @@ small {
       } */
 
 body {
-    background: url(homebg.png);
+    /* background: url(homebg.png); */
     background-size: 100vw;
-    /* height: 100vw; */
-    /* width: 100vw; */
-    min-height: 100vh;
-    /* background-color: #FFF !important; */
-    /* background-image: url(../images/homebg.png); */
     background-position: center top;
-    /* background-size: contain; */
     background-repeat: no-repeat;
 }
 
