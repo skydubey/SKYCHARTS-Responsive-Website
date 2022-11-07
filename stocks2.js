@@ -40,6 +40,7 @@ function scrolling() {
 document.getElementById("clicktofocus").addEventListener("click", () => {
     document.getElementById("inputsearch").focus();
 });
+
 document.getElementById("getbtn").addEventListener("click", () => {
     document.getElementById("loader").addClass('d-none');
 });
