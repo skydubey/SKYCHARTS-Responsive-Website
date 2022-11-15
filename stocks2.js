@@ -144,12 +144,7 @@ function getData() {
                 let changeinrupee = latestclosing - onedaybefclosing;
                 let changeinper = (changeinrupee * 100) / onedaybefclosing;
 
-                if(volume>1000000){
-                    volume = volume/1000000+"M";
-                }
-                else{
-                    volume = volume/1000+"k";
-                }
+                
 
                 $('#containerScrip').removeClass('d-none');
                 $('.footer').removeClass('d-none');
@@ -232,7 +227,14 @@ function getData() {
                 $('#close').text(parseFloat(close).toFixed(2));
                 $('#prevclose').text(parseFloat(onedaybefclosing).toFixed(2));
                 // / 1000 + "k"
-                $('#volume').text(parseFloat(volume).toFixed(2));
+                if(volume>1000000){
+                    volume = volume/1000000;
+                    $('#volume').text(parseFloat(volume).toFixed(2)+"M");
+                }
+                else{
+                    volume = volume/1000;
+                    $('#volume').text(parseFloat(volume).toFixed(2)+"k");
+                }
                 document.getElementById('datepicker').value = "";
 
                 $('#goBtn').on('click', function () {
