@@ -229,11 +229,11 @@ function getData() {
                 // / 1000 + "k"
                 if(volume>1000000){
                     volume = volume/1000000;
-                    $('#volume').text(parseFloat(volume).toFixed(2)+"M");
+                    $('#volume').text(parseFloat(volume).toFixed(3)+"M");
                 }
                 else{
                     volume = volume/1000;
-                    $('#volume').text(parseFloat(volume).toFixed(2)+"k");
+                    $('#volume').text(parseFloat(volume).toFixed(3)+"k");
                 }
                 document.getElementById('datepicker').value = "";
 
@@ -1903,11 +1903,11 @@ function getData() {
                 $('#prevclose').text(parseFloat(onedaybefclosing).toFixed(2));
                 if(volume>1000000){
                     volume = volume/1000000;
-                    $('#volume').text(parseFloat(volume).toFixed(2)+"M");
+                    $('#volume').text(parseFloat(volume).toFixed(3)+"M");
                 }
                 else{
                     volume = volume/1000;
-                    $('#volume').text(parseFloat(volume).toFixed(2)+"k");
+                    $('#volume').text(parseFloat(volume).toFixed(3)+"k");
                 }
                 document.getElementById('datepicker').value = "";
 
