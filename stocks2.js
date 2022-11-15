@@ -1901,7 +1901,14 @@ function getData() {
                 // $('#ltp').text(parseFloat(close).toFixed(2));
                 $('#close').text(parseFloat(close).toFixed(2));
                 $('#prevclose').text(parseFloat(onedaybefclosing).toFixed(2));
-                $('#volume').text(volume / 1000 + "k");
+                if(volume>1000000){
+                    volume = volume/1000000;
+                    $('#volume').text(parseFloat(volume).toFixed(2)+"M");
+                }
+                else{
+                    volume = volume/1000;
+                    $('#volume').text(parseFloat(volume).toFixed(2)+"k");
+                }
                 document.getElementById('datepicker').value = "";
 
                 $('#goBtn').on('click', function () {
