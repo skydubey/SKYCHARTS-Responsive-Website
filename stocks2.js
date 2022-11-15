@@ -232,7 +232,7 @@ function getData() {
                 $('#close').text(parseFloat(close).toFixed(2));
                 $('#prevclose').text(parseFloat(onedaybefclosing).toFixed(2));
                 // / 1000 + "k"
-                $('#volume').text(volume);
+                $('#volume').text(volume.toFixed(2));
                 document.getElementById('datepicker').value = "";
 
                 $('#goBtn').on('click', function () {
