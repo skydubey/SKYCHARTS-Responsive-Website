@@ -1852,7 +1852,7 @@ function getData() {
                 let high = response['Time Series (Daily)'][datevalue]['2. high'];
                 let low = response['Time Series (Daily)'][datevalue]['3. low'];
                 let close = response['Time Series (Daily)'][datevalue]['4. close'];
-                let volume = response['Time Series (Daily)'][datevalue]['5. volume'];
+                let volume = response['Time Series (Daily)'][datevalue]['6. volume'];
 
                 let onedaybefdate = Object.keys(dates)[1];
 
